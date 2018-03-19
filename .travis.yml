@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: releases
+  api_key:
+    secure: cLg1+fdPAmEdG/x38Zje+ZQtpv0JQmi33OMKG/3LDYt2CxhGcWD91+gBX4XS5VX92QzbDLvKWAtWrtasrJ+Xn/uzYaNbLi5lWFdkH9uwp75TEcT5QfM7NQTlOhJWm/O0VPnZ6txwBiaC4aOiTQ/zkAoZUZ9hM19v0UGkxIzQMzNj00d3Cd2ovOZ4IWewELPLFzYKXXh6VjEgbKTmjp1QCQYH+LNOnH8/qWtCYzlSnR3wM2+8b+JjWYxVxdMPXri+n3poDyN+ZNEz3P3zNANPjqmzEAs6lFSxkyockfrqoKnUfD2tQtaJ1dsWahmJvw37xby6S55NAfzH/jXLYFu0F4SKJez0UN1JxJZnfsdfXa14pIXsCAMmgHo21Sr68NUf06o2I1axzblkRjh5AlmHD6YWZql/fh8Ss1fA/IrDZ89mg2pK1/SpESX+U/GkUILu2o32NKtkR8xSvnGFrnFUY/VlMAAqX2rUAXI/gPede1xFNVu1SsD0jZal8sJkt4K3jhbvGEGxp8LJLs1USHgoBLHfBIgQiPB5gJA39SSdFt13S1aI0lz2Al1e2HsjVctulZ1TqmqzKNAgR+PgnUjBlNhlfXpXM/6u0BM+8bbsQF0nUBLmNpvTxsNd/QF8VluqlVkVvFKjvLs0IxskrHZsD8jXMlcUVhYKGeKCtu6YQq4=
+  file: dist/jquery.selectpicker-tree.min.js
+  on:
+    repo: Pieter-Beckers/selectpicker-tree
