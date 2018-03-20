@@ -4,6 +4,7 @@ node_js:
 before_install:
   - npm install grunt-cli -g
 deploy:
+  name: 1.0.0
   provider: releases
   skip_cleanup: true
   api_key:
