@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+	<title>Selectpicker Tree - Example</title>
+
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../node_modules/bootstrap-select/dist/css/bootstrap-select.css"/>
+
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../node_modules/bootstrap-select/dist/js/bootstrap-select.js"></script>
+
+	<script src="../src/jquery.selectpicker-tree.js"></script>
+
+
+</head>
+<style>
+</style>
+<body>
+<form>
+	<div id="my-selectpicker-tree"></div>
+</form>
+<script>
+	$( function() {
+		$( "#my-selectpicker-tree" ).selectpickerTree( {
+			data: [
+				{
+					name: 'foo',
+					items: [{
+						otherName: 'fizz',
+						otherItems: ['faz', 'fuz']
+					}, {
+						otherName: 'fizz2',
+						otherItems: []
+					}]
+				},
+				{
+					name: 'bar',
+					items: [{
+						otherName: 'baz'
+					}]
+				}
+			],
+			metadata: {
+				label: 'Name',
+				child: {
+					name: 'otherName',
+					label: 'OtherName',
+					children: 'otherItems',
+					options: {
+						title: 'Choose other one...'
+					}
+				}
+			}
+		} );
+	} );
+</script>
+</body>
+</html>
