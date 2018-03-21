@@ -7,7 +7,7 @@ A tree for a set of bootstrap selectpickers
 - bootstrap-select
 
 ## Example
-- See example/index.html for the example
+- See docs/index.html for the example
 
 ## Usage
 - Put a `div` with a unique `id` in a `form`
