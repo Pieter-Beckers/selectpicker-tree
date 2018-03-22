@@ -39,11 +39,11 @@ module.exports = function( grunt ) {
 		babel: {
 			options: {
 				sourceMap: true,
-				presets: ['env']
+				presets: ["env"]
 			},
 			dist: {
 				files: {
-					'dist/jquery.selectpicker-tree.js': 'dist/jquery.selectpicker-tree.js'
+					"dist/jquery.selectpicker-tree.js": "dist/jquery.selectpicker-tree.js"
 				}
 			}
 		},
